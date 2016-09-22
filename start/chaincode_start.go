@@ -79,6 +79,8 @@ func (t *SimpleChaincode) Query(stub *shim.ChaincodeStub, function string, args 
 
 	return nil, errors.New("Received unknown function query")
 }
+
+//add the write function!
 func (t *SimpleChaincode) write(stub *shim.ChaincodeStub, args []string) ([]byte, error) {
     var key, value string
     var err error
